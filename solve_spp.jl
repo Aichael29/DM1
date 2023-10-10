@@ -16,7 +16,7 @@ end
 
 # Fonction pour résoudre le modèle et collecter les résultats
 function solveSPPAndCollectResults(fname)
-    # Chargement de l'instance SPP depuis un fichier
+    
     C, A = loadSPP(fname)
 
     # Création du modèle SPP
@@ -70,11 +70,11 @@ function localSearch(spp, C, A, initial_solution)
     return current_solution, current_value
 end
 
-# Liste des noms de fichiers d'instances de test (adaptez ces noms et chemins)
+# Liste des noms de fichiers d'instances de test 
 instance_files = [
     "instance1.dat",
     "instance2.dat",
-    # Ajoutez ici les noms des autres fichiers d'instances
+    
 ]
 
 # Boucle sur les instances de test pour résoudre avec heuristique
